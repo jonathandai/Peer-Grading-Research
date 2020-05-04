@@ -1,0 +1,925 @@
+﻿--------------------------------------------------------------------------------
+******************** problem submission id: 18185760
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Incorrect answer. because you start with the agent with smaller duration, you cannot really have independent subproblems, and the solution it returns will not be optimal. 
+
+
+Base case is not correct as well. 
+----------
+*Proof*: Missing code and test case.
+Wrong justification in part 2.  
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 149406
+----------
+*Algorithm*: The answer is incorrect without a claim that it is incorrect.
+The answer is kind of close, but you are not calling anything related to OPT(i - 1) in your recurrence, which is a huge mistake. Also for the incorrect answer, the description is not written and explained carefully, so I can't give credit for what you did.
+----------
+*Proof*: 
+----------
+*Clarity*: (1) No implementation is given.
+(2) For your proposed algorithm, the runtime analysis is incorrect - Runtime per subproblem is O(T).
+(3) Why is there a g + s while g is a variable that circulates from n to 1?
+
+
+--------------------------------------------------
+peer id: 151084
+----------
+*Algorithm*: -Your algorithm cannot deal with the situation in which a friend’s okay interval has intersection with the current interval of [s,f] but the optimal start day assignment k for that friend is outside the interval of [s,f]. For example, [s,f]=[0,10] while [si,fi]=[5,12] and di=1. Then it is possible to assign k as 11 but it is not in [s,f]. I think it is because you confine k in [s,f]
+-Initial problem and definition of the subproblem has the same basic idea as the TA's solution
+-Base case: if you define [s,f] as a closed interval, then OPT(i,i,x) is possible to be non-zero.
+----------
+*Proof*: -No implementation. --0
+-If you mean k∈[si,fi]⊆confined[s,f] in the second part, Runtime per subproblem should be O(T) --3
+----------
+*Clarity*: -I think you should explain more details about your algorithm, e.g., why are you sorting friends from small di to large di.
+-k∈{i,...,j}⊆confined[s,f] in part II is a little unclear. Is the i here the same i in the subproblem parameter which indicates friend? I think you mean k∈[si,fi]⊆confined[s,f]. Am I correct?
+- I think you should make the description of combining subproblems more detailed. for example, how the interval of [s,f] is divided into two parts and how you derive the new bounds(s' and f') for the intervals of subproblems.
+
+
+--------------------------------------------------
+peer id: 149625
+----------
+*Algorithm*: When defining a subproblem, the step of sorting the duration is correct, but the definition of the subproblem is not correct. The recursive formula does not converge the problem very well. Based on the definition of the sub-question, the original problem description is correct, and the base case is correct. The iteration code is also incorrect due to errors in the recursive formula.
+----------
+*Proof*: In the runtime analysis, the time of each sub-question is incorrect, and the time for sorting is not calculated. Because the algorithm design does not converge the size of the sub-problem well, it is suspected that this is the reason why the job does not implement the code.
+----------
+*Clarity*: Readers can probably understand the author's intentions, but the expression in some places is still a bit fuzzy.
+
+
+--------------------------------------------------
+peer id: 79076
+----------
+*Algorithm*: Solution is close to being correct. The recurrence has the right idea of starting from the friends with the highest d_i and looking at all the friends with a time interval that would intersect with the days that could be booked for that friend. The runtime analysis is incorrect but also close; the number of subproblems is indeed O(T^2 n), though the runtime per subproblem is O(T) rather than O(n), and there should be more work done in the initialization.
+----------
+*Proof*: Solution lacks implementation in code (part 7).
+----------
+*Clarity*: Justifications are given where needed, and the recurrence is clearly explained even if not fully correct.
+
+
+--------------------------------------------------
+peer id: 82025
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 100251
+----------
+*Algorithm*: Algorithm seems to be on the correct track, although by not implementing it it is hard to know for sure if it will produce the correct results.
+----------
+*Proof*: Runtime is correct for the most part. Preprocessing should be O(T*n) because you are looping over both the time frames s1 to fn for each n. Also rather than assuming you want to pass in a sorted input array it would be better to sort it and add the time to pre-processing.
+----------
+*Clarity*: Clear, well written proof
+
+
+--------------------------------------------------
+peer id: 149258
+----------
+*Algorithm*: I didn't clearly understand their definition of confined[a, b] and using of k in the recurrence. Besides, they didn't iterate i in the recurrence. However, some parts are a little bit meaning.
+----------
+*Proof*: Similar reason like the algorithm part. In addition, they don't have the implement code which also enhances the difficulty to understand their thought for me. 
+----------
+*Clarity*: They confusedly use letter i in the recurrence part, and maybe they should explain more for some definitions and uses of characters.
+
+
+--------------------------------------------------
+peer id: 101666
+----------
+*Algorithm*: 
+----------
+*Proof*: In the recurrence, k should be confined in [0,f-s-d+1], not [s,f].
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 141558
+----------
+*Algorithm*: Although the algorithm is not completely correct, it's the right direction to solve the problem. 
+----------
+*Proof*: The implementation part is missing.  Some small mistakes exist for example like run time analysis.
+----------
+*Clarity*: The proof is clear.
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18185769
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: A clear statement of why it is incorrect has a score of 4. 
+----------
+*Proof*: Same as above
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 78518
+----------
+*Algorithm*: Nice try, but this problem was really hard. I gave you a couple points because you mentioned your solution was incorrect.
+----------
+*Proof*: See above.
+----------
+*Clarity*: Although incorrect, the solution was easy to read and clear, although step V could've been done more clearly and step VII didn't exist.
+
+
+--------------------------------------------------
+peer id: 82455
+----------
+*Algorithm*: The algorithm is not correct, but this is stated clearly and explained.
+----------
+*Proof*: Same as above; incorrect, but clearly explained.
+----------
+*Clarity*: Very  clear.
+
+
+--------------------------------------------------
+peer id: 95231
+----------
+*Algorithm*: Incorrect  base case and recurrence.
+----------
+*Proof*: Incorrect runtime except for postprocessing
+----------
+*Clarity*: 1. Incomplete 
+2. No justifications
+3. No implementation
+
+
+--------------------------------------------------
+peer id: 83555
+----------
+*Algorithm*: Does state that the algorithm is incorrect and gives an example of when it fails, but neither describes why the algorithm is incorrect nor offers anything about difficulties in fixing the solution. Below are errors in the assignment that were not mentioned.
+1. OPT(i) is ambiguous, because there can be multiple intervals for visits that minimize costs for friends {1, ..., i}. 
+2. A formula for the recurrence is not offered. Only a justification.
+4. i is undefined.
+6.  Number of subproblems is at least n, as OPT can take n values as input. However, if we also consider that OPT(i) can be any subset of the times for each friend i, the number of subproblems becomes O(n 2^n).
+7. An implementation is not offered.
+----------
+*Proof*: 
+----------
+*Clarity*: Reasonably clear, if a bit sparse.
+
+
+--------------------------------------------------
+peer id: 149243
+----------
+*Algorithm*: I really confused about the recurrence.
+----------
+*Proof*: I don't think you finish the subproblem, the iterative part, and the runtime analysis is wrong. Also, lack the code part.
+----------
+*Clarity*: Please using the math equation format.
+
+
+--------------------------------------------------
+peer id: 144255
+----------
+*Algorithm*: Your answer is incorrect, and only uses one variable in the OPT call and does not take into account the time requested, nor does the subproblem lend itself to completing the requested solution.
+----------
+*Proof*: You do not include an implementation of your solution, and you do not write your recurrence explicitly. . Also your runtime analysis is incorrect because your number of subproblems cannot be a constant.
+----------
+*Clarity*: You explain your work fairly well, but your work is severely lacking information and clarity.
+
+
+--------------------------------------------------
+peer id: 149596
+----------
+*Algorithm*: although your answers are wrong, your method is close to the correct one, and your time complexity is partly correct.
+----------
+*Proof*: few points for step 1
+----------
+*Clarity*: using a graph can help you express yourself better.
+
+
+--------------------------------------------------
+peer id: 101430
+----------
+*Algorithm*: Missing algorithm that implements dynamic programming, current explanation leaves a gap, greedy algorithm
+----------
+*Proof*: Proof is almost nonexistent, identifies the steps that can be taken when recursing, but no justification of how to go about those steps. Incorrect base case and runtime analysis
+----------
+*Clarity*: Explains thought process to best of ability given incomplete answer, but still lacking a comprehensive attempt at a solution
+
+
+--------------------------------------------------
+peer id: 103663
+----------
+*Algorithm*: Incorrect answer (no clear recurrence) and no implementation
+----------
+*Proof*: Incorrect proof
+----------
+*Clarity*: Not very clear
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18287444
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Correct idea, but the details like recurrence is not exactly correct, 
+and how you define i in subproblem is strange. See TA solution on how to fix it. 
+----------
+*Proof*: Missing code and test case
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 82553
+----------
+*Algorithm*: Incorrect runtime
+----------
+*Proof*: excellent use of graphs
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 83372
+----------
+*Algorithm*: Algorithm appears to be correct; however, there is no implementation
+----------
+*Proof*: Proof is mostly correct
+----------
+*Clarity*: Proof is clear
+
+
+--------------------------------------------------
+peer id: 83709
+----------
+*Algorithm*: subproblem ambiguous: did not specify what "these people" mean; the recurrence seems correct but when dividing to smaller subproblems, the student fails to increment person i; the student mentioned the function "cost(s,f,s',f')" but did not define it; the runtime analysis is incorrect
+----------
+*Proof*: Base case is incorrect by not mentioning when i > n; there is no implementation
+----------
+*Clarity*: The write-up is clear
+
+
+--------------------------------------------------
+peer id: 145292
+----------
+*Algorithm*: The overall 7 steps of the answer provided was incorrect for many of the parts.
+However, part one of the subproblem definition as correct. Also for part 2 the idea of splitting into the subcases was mostly correct and the approach had the right idea. However, parts 3-7 was incorrect. The original problem that needed to be solved was incorrect. The base cases are also wrong compared to the posted solutions. For part 5, the iterative solution was written correctly given the recurrence subproblem they stated. However, the runtime analysis is wrong compared to the posted solutions. Also they did not post a part 7 for the overall solution of the dynamic programming rubric. The user also did not notify that their solution was not correct and not fully complete. If a solution is incorrect they must state that their approach is wrong and define how they can fix the issue.
+
+
+----------
+*Proof*: The analysis and justification for all the parts were mostly defined for the parts in the dynamic programming proof. Parts 1 and two were explained well and made sense in the explanation.  However, parts 3-7 was incorrect. It did not match with the posted solutions and the proof was not fully complete. It mostly gave a description of how this solution was supposed to go, but it did not fully implement it correctly compared to the posted solution. The solution was incomplete in the proof as there was no part 7 in the dynamic programming proof.
+----------
+*Clarity*: The submission was explained for their approach in solving the problem. I also thought that the graph helped me understand that the approach was somewhat correct and similar to the posted solutions. However, the answer provided did not match exactly with the posted solutions. Parts one and two were seemed mostly correct as it followed the approach.  Steps 3-6  were also not correct in the answer provided as it did not match with the posted solutions and it was incomplete as the recurrence was not implemented correctly. Also there was no part 7. However, the user did give an explanation, although it wasn’t fully correct.  The user also did not notify that their solution is incorrect. If a solution is incorrect they must state that their approach is wrong and define how they can fix the issue.
+
+
+
+
+--------------------------------------------------
+peer id: 58795
+----------
+*Algorithm*: Runtime Analysis ignores certain initializations.
+----------
+*Proof*: The iteration looking through multiple values of s' and f' implies that they are iterated through independently, when they are bound at a distance d_i from each other.
+Also, since f_i is also a day on which a friend can stay, the base case OPT(s_i, f_i, i) = d_i would not hold, since even in that case, there are two options: friend i stays from s_i to f_i-1 or from s_i+1 to f_i.
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 149666
+----------
+*Algorithm*: Algorithm seems incorrect, because the definition of `cost` is unclear.
+----------
+*Proof*: Recurrence is incorrect.
+
+
+Base cases are correct for the definition of subproblem.
+
+
+Runtime analysis is correct if the algorithm is correct.
+
+
+No implementation is provided. No test cases are provided.
+----------
+*Clarity*: Writing is concise and clear, with images to help clarify.
+
+
+--------------------------------------------------
+peer id: 82131
+----------
+*Algorithm*: Algorithm calculates the wrong cost.
+
+
+Total runtime should be (T^4n + nlogn) The two runtimes aren't comparable thus you can't eliminate either.
+----------
+*Proof*: i doesn't change. Therefore computing the wrong cost.
+
+
+The cost function isn't defined right. It is not referring to variables s or f.
+
+
+Base case 1 is wrong. What if you have 10 available days for person i with d_i = 5 and underneath person i's availability you have 5 people with d_j's equal to 2. The total cost is 10, not 5.
+----------
+*Clarity*: Unclear subproblem definition. Wen  you say people between s and f you are already including the friend i; I don't get why it's mentioned.
+
+
+Cost isn't initialized in the algorithm but mentioned in the precomputing.
+
+
+Algorithm is hard to read cause isn't indented properly.
+
+
+--------------------------------------------------
+peer id: 97608
+----------
+*Algorithm*: Generally correct, relies on a pre-computed "costs" table and it is not explained how this table is computed. Additionally, the recurrence doesn't seem to change the person that is being looked at (i).
+----------
+*Proof*: Mostly the same intuitions as the provided proof, but relies on a costs table that is not calculated in the algorithm. 
+----------
+*Clarity*: Explanation is relatively easy to follow, the definition of the subproblem is not completely clear.
+
+
+--------------------------------------------------
+peer id: 149184
+----------
+*Algorithm*: The algorithm provided seems to be rigorous, but it has some mistake assumptions.
+1) The cost function might constrain the possibilities without backup. When the cost function divides a period into two or more segments, then the availability options for each person reduces significantly and it can't be reimbursed in that step.
+2) The implementation is not given.
+----------
+*Proof*: Related to the previous mentions. "Partly overlapped" sounds subtle. It needs to be more well-defined (e.g., a metric?)
+----------
+*Clarity*: The writing and the image help us to understand the solution.
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18457767
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Incorrect answer
+----------
+*Proof*: None
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 149607
+----------
+*Algorithm*: The solution is wrong, if the start time of friends are all different, the group they indicate is useless. Besides, their solution allocated the time for each friends in only one direction (1 to j), and that would lead to an wrong solution because there will be overlaps between each subproblems,
+----------
+*Proof*: The run time analysis of thier algorithm is correct but the algorithm itself is wrong.
+----------
+*Clarity*: The writing of the submission is clear, but some symbols are used in a confusing way. i and j are used in different place with different meanings.
+
+
+--------------------------------------------------
+peer id: 151275
+----------
+*Algorithm*: The solution is missing parts 5 and 7.  The algorithm has a logical error where the authors assume that people whose regions begin on the same day will begin their actual stays on the same day
+----------
+*Proof*: The recurrence is convoluted and confusing. I do not understand why you minimize k in the first portion where k is the group number. It would seem to me that you need to evaluate every group to make sure they all have satisfactory stays available. Cost function should be defined in english. I cannot even evaluate it if it works as intended because I do not really know what it is supposed to do.
+----------
+*Clarity*: Little to no justification for the very complex answers, and no reasoning for leaving portions blank. If you cannot figure out an answer to a problem, please leave some discussion on why you could not get your solution to work. This would allow me to give more partial credit.
+
+
+--------------------------------------------------
+peer id: 77308
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 149306
+----------
+*Algorithm*: The answer is incorrect without a clear statement. And there is no implementation in the answer.
+----------
+*Proof*: the same as the answer/algorithm
+----------
+*Clarity*: The justification in part II is unclear.
+
+
+--------------------------------------------------
+peer id: 105330
+----------
+*Algorithm*: Your algorithm is very complicated and hard to understand. It does not appear to produce a correct solution, and there is no explanation for issues you were having. In your recurrence, you're also saying you can consider i and j when calculating l and k, which doesn't make sense as you haven't calculated OPT(i,j) yet.
+----------
+*Proof*: Preprocessing is incorrect. If you're sorting, the runtime is at least O(nlogn). You also make the cost dictionary, which will take additional time that you haven't accounted for.
+
+
+The runtime per subproblem is also O(n^2T) as you're searching for a max (O(n)), doing that O(nT) times, and then also finding a min (O(T)). So the runtime should be O(nlogn + n^3T^2). Your base cases are incorrect. There is also no implementation at all, and you didn't have any explanation for issues you came accross, or how you would fix them if you had more time
+----------
+*Clarity*: The parts you finished had a clear attempt to explain all variables used, though the recurrence did seem to confuse you as well. The recurrence is super hard to read, and it's unclear what you were trying to do without a written explanation
+
+
+--------------------------------------------------
+peer id: 125069
+----------
+*Algorithm*: The algorithm doesn’t work. The preprocessing step can’t help with this problem. The definition of the subproblem is not enough to solve this problem. Since there isn’t a clear definition of the grouping method, the ng in step III is confusing. Same for part IV base case. The total runtime has the same dimension with the posted solution but the break down is wrong.
+----------
+*Proof*: The justification in step II Isi confusing and needs more explanation. There is a lack of implementation.
+----------
+*Clarity*: In sum, this algorithm is incorrect. But the user did not notify that their solution is incorrect. If a solution is incorrect they must state that their approach is wrong and define how they can fix the issue.
+
+
+--------------------------------------------------
+peer id: 124702
+----------
+*Algorithm*: Incorrect subproblem leads to incorrect solution.  Part V is omitted. 
+----------
+*Proof*: Attempted to express solution to subproblem as recurrence, but incorrect subproblem had been identified. No implementation was provided. 
+----------
+*Clarity*: The solution is not well-explained
+
+
+--------------------------------------------------
+peer id: 58198
+----------
+*Algorithm*: Incomplete steps and unable to tell if it is correct
+----------
+*Proof*: Please include step five and step seven. Not able to tell if it is correct. 
+----------
+*Clarity*: Please explain in step two about the recurrence for better understanding.
+
+
+--------------------------------------------------
+peer id: 151427
+----------
+*Algorithm*: incomplete algorithm
+----------
+*Proof*: incomplete algorithm
+----------
+*Clarity*: 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18221839
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: In the recurrence, t and i are not defined. getOverlap is not defined in Part 2. 
+
+
+Part 3 output only have 2 indexes instead of 3. 
+
+
+Also, based on the description before part I, why would you get independent subproblem that will lead to optimal solution. 
+----------
+*Proof*: Justification for part 2 is not correct. 
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 149307
+----------
+*Algorithm*: The algorithm is incorrect without a clear statement that it is incorrect. I tried to run your code, then found that it still contains some bugs. It is meaningless to provide the brute force based implementation. :(
+----------
+*Proof*: Due to the wrong algorithm, I cannot give credit for what you did.
+----------
+*Clarity*: The clarity is good. But due to the wrong algorithm, the implementation that cannot run, and no test case provided, I can only give 6 to the clarity.
+
+
+--------------------------------------------------
+peer id: 125711
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+
+
+--------------------------------------------------
+peer id: 102267
+----------
+*Algorithm*: This solution is incorrect per the TA solution, although the approach is relatively close. Given your approach, however, your solution to the original problem (part III) is still incorrect since you're missing two of your original parameters.
+----------
+*Proof*: The runtime analysis is incorrect, the justification for the recurrence is lacking as it doesn't explain how the intervals operate in the recurrence or why getOverlap is used the way it is. The implementation and base cases are inaccurate given the incorrect recurrence. 
+----------
+*Clarity*: The approach explained at the top is helpful but there's a lack of justification for the recurrence itself. Also in the implementation, it's always a good idea to note the output of your program. 
+
+
+--------------------------------------------------
+peer id: 81533
+----------
+*Algorithm*: Algorithm is incorrect and does not meet the runtime requirements stated in the problem itself
+----------
+*Proof*: Proof and analysis is thorough but still incorrect
+----------
+*Clarity*: Write-up is extremely clear and the diagrams are a nice touch
+
+
+--------------------------------------------------
+peer id: 78040
+----------
+*Algorithm*: The algorithm seems to be on the right track but has more moving parts than necessary. See the solutions.
+----------
+*Proof*: The analysis seems mostly correct with the algorithm provided.
+----------
+*Clarity*: The explanation and analysis are mostly clear with all of the steps explained and with pictures. It is unclear from the subproblem and recurrence where the variable i is changed and iterated through.
+
+
+--------------------------------------------------
+peer id: 141557
+----------
+*Algorithm*: It looks correct. But something seems to be redundant.
+----------
+*Proof*: No much justification for part II.
+----------
+*Clarity*: Good graphs but it would be better to have more explanations besides them.
+
+
+--------------------------------------------------
+peer id: 124864
+----------
+*Algorithm*: The relation between a and b not mentioned in Part I. However, by the definition of OPT, it looks like a<b, since they have been mentioned as left and right intervals. This makes [p a] and [q b] not overlapping.
+But in the recursion [p t+d1] and [a t] are overlapping.
+From the discussion on the main idea, it looks like order of arguments in the recusion (p,a,b,q) is wrong and it should be (p,q,a,b)
+
+
+
+
+----------
+*Proof*: 
+----------
+*Clarity*: In the recurrence, "a" has been defined twice.
+i. In OPT(p,a,b,q)
+ii. In for all a in [p,q].
+Similarly b.
+Also, in the subproblem definition OPT has arguments in the order (p,q,a,b). But in recursion, it is (p,a,b,q) which is confusing.
+
+
+--------------------------------------------------
+peer id: 64456
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18457766
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Mostly correct but illigitimate is not defined in previous context and it is hard for me to verify what you mean for this part from the code. 
+----------
+*Proof*: 
+----------
+*Clarity*: Several typos in the submission. Although I understand what you mean, for others maybe confusing. 
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 103154
+----------
+*Algorithm*: The overall approach seems to be correct, with examining legitimate places to book the person and then splitting into isolated gaps on the left or right.  This approach handles partial overlaps on the desired segment placement interestingly, but I feel as though there are tricky corner test cases (with multiple overlaps on intervals after placing initial one) that weren't included and tested against implementation.
+----------
+*Proof*: Based on the approach laid out, the complexity analysis is correct, and the formal justification under the recurrence was great.
+----------
+*Clarity*: The proof was very clearly elucidated, and specifically, the section in the recurrence was very well written.
+
+
+--------------------------------------------------
+peer id: 149578
+----------
+*Algorithm*: Didn't consider the the duration of different person di, and unclear use of 'inf' in recurrence equation.
+----------
+*Proof*: The steps shown in your solution can well support your standing point, basically make sense  thus standard credit.
+----------
+*Clarity*: Since the subproblem is based on a&b, your solution is supposed to get the optimal solution in range(a,b), also OPT needs to be related to every person who has not arranged. Lack of explanation about 'm', as well as 'illigitimate' in the recurrence.
+
+
+--------------------------------------------------
+peer id: 78248
+----------
+*Algorithm*: Mostly right but missing some details, see my comment
+----------
+*Proof*: Mostly there but same problem
+----------
+*Clarity*: Use \infty instead of typing out inf. Espescially when i and f are already variables. 
+Break up you long equations into multiple lines so they are more digestible. 
+
+
+
+
+--------------------------------------------------
+peer id: 124860
+----------
+*Algorithm*: The subproblem has a similar description to TA's solution and your answer is more specific. The recurrence is also correct. Though the formula like "illgimate" is kind of confusing at first the justification below is clear and sufficient. But I'm not sure if you could write in this way
+----------
+*Proof*: The justification for part 1 to part 6 is correct and succinct. It's really helpful to understand your algorithm. The code is also correct. I managed compiled it on my computer and generated the correct answer
+----------
+*Clarity*: The description is clear and reasonable. It's easy for me to understand your algorithm
+
+
+--------------------------------------------------
+peer id: 62199
+----------
+*Algorithm*: Good ideas, though the backing behind them is a bit iffy. 
+----------
+*Proof*: You were on the right track, especially in splitting up the recurrence into sets and the method of minimization, though I don't believe you used i correctly and some of the choices you made confused me a bit. Bonus points though for the use of infinity, if I'm reading that correctly that was a smart work around for minimization.
+----------
+*Clarity*: Clarity was ok but there was a bit of overuse in terms of mathematical notation where you could've used english that made it a bit obtuse and you introduced a few new variable names when you didn't need to, otherwise content felt fairly well communicated.
+
+
+--------------------------------------------------
+peer id: 124300
+----------
+*Algorithm*: Your algorithm is correct. I am surprised to see that you did it without sorting.
+----------
+*Proof*: Your analysis is as per your algorithm.
+----------
+*Clarity*: Comments, justifications, notations... everything is clear and easy to follow.
+
+
+--------------------------------------------------
+peer id: 110052
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: hard to understand
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18185852
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Missing target value in instance construction. 
+
+
+In backward certificate construction, what you have is only a set of edges, not the set of paths. 
+
+
+Forward certificate construction is also strange. For example, you only want to connect s to ui if ui is in the set of paths, not all ui. 
+----------
+*Proof*: didn't argue that path are disjoint in part 2 
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 82025
+----------
+*Algorithm*: Good job
+----------
+*Proof*: 
+----------
+*Clarity*: I like the use of graphs
+------------------------------
+TA's comments on peer 82025
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: See my comments why this construction is not fully correct. 
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149184
+----------
+*Algorithm*: Part 1) The current solution just adds starting and finishing nodes to the graph to meet the structural properties of network problem. However, it does not reflect the key property of the original problem (Sly Spy) because this forward construction only allows disjoint "edges" not "vertices." For example, even though two routes, R1 and R2, do not cross the same edge, they might cross the same vertex not covered by Q, u, if they have edges (v, u)/(u, w) and (p, u)/(u, q), respectively.
+
+
+*It seems like the authors tried to convert the problem into bipartite matching-like instance, but the bipartite matching problem assumes only 1 edge in a path, which is quite a different setting from that of this problem.
+
+
+Part 2) Consequently, the backward solution construction became overly simplified. This construction cannot guarantee any property of the original problem.
+
+
+Part 3) Steps 2 and 3 are not quite comprehensible. These steps do not suppose some assumptions, e.g., "for some si in Ri."
+----------
+*Proof*: Part 2) To make sure this backward construction hold, it is required to prove that the routes are disjoint in terms of vertices, which is omitted in the answer.
+
+
+Part 3) Conservation constraint applies to each node in the network, not only to s and t nodes.
+----------
+*Clarity*: Some notations are not contextualized sufficiently, resulting in confusing analysis.  For example, the notations S, T, and Q might need more formal definition at the beginning part of the solution.
+------------------------------
+TA's comments on peer 149184
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 100251
+----------
+*Algorithm*: Overall algorithm is correct for the most part, backwards construction is incorrect in that it only records the  edges from S^x to {s_i, ... , s_k} and not all edges in the path. This causes problems in the forward certificate construction as they assume all edges in the paths are stored in M.
+----------
+*Proof*: Proofs are in the correct direction, but lack specificity, hard to judge whether proofs are rigorous enough.
+----------
+*Clarity*: Could use better formatting, seems a bit all over the place.
+------------------------------
+TA's comments on peer 100251
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 124300
+----------
+*Algorithm*: Your whole solution is incomplete and incorrect. Here are some situation where your construction will fail 
+1) How are you going each vertex is shared among different paths?
+2) What if current positions of the spies are connected with each other?
+----------
+*Proof*: Time complexity of Forward Instance Construction is incomplete.
+For backward solution construction, you don't argue if the path exists or not. It is also not proved if the paths cross or not. Timing analysis of this part is incorrect as well.
+Your  Forward Solution Construction is partially correct 
+----------
+*Clarity*: You have adequately followed the steps which makes your solution easy to follow. Your discussion partially support the construction you propose. However they are incorrect. 
+------------------------------
+TA's comments on peer 124300
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149607
+----------
+*Algorithm*: The basic idea of their algorithm is correct, but they failed to identify the route R_i for each spy and whether the given s_i and t_i is valid.
+----------
+*Proof*: In part 3, they forget to set the flow between q_1 and q_2.
+----------
+*Clarity*: The writing of the submission is clear, concise, and easy to understand.
+------------------------------
+TA's comments on peer 149607
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149306
+----------
+*Algorithm*: This answer is almost correct. In part 2, the answer fails to set route Ri. And the runtime analysis is incorrect.
+----------
+*Proof*: The same as the answer/algorithm.
+----------
+*Clarity*: The instance construction part is comfusing with notation (S,T,Q,E).
+
+
+--------------------------------------------------
+peer id: 125069
+----------
+*Algorithm*: Your algorithm is not a decision version. The construction is incomplete. It can not ensure the current location and target will be passed only once. Additionally, the edges' construction loses some potential paths. The runtime is part 2 is incorrect.
+----------
+*Proof*: I think the flow is about individual edge or the total flow. You can not say u∈S, v∈T, fx(u, v)=1 and you can not say fx is a flow.
+----------
+*Clarity*: Your proof is not very clear and your statement of construction is ambiguous.
+------------------------------
+TA's comments on peer 125069
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149625
+----------
+*Algorithm*: The idea of transformation is proper and the correct reduction is basically explained.
+----------
+*Proof*: All constraints needed to transition between each instance are mentioned. Runtimes are correct.
+----------
+*Clarity*: The expression is basically clear, and the representation of the symbol may require some improvement.
+------------------------------
+TA's comments on peer 149625
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: See my comments why this construction is not fully correct. 
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 79595
+----------
+*Algorithm*: Does mention splitting vertices between start and end, but does not specify how they need to be split.
+----------
+*Proof*: 
+----------
+*Clarity*: Writing is clear and understandable, but reads like the solution to another problem at first glance.
+------------------------------
+TA's comments on peer 79595
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: See my comments why this construction is not fully correct.

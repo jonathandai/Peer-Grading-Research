@@ -1,0 +1,584 @@
+﻿--------------------------------------------------------------------------------
+******************** problem submission id: 2511
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:['Great job!']
+
+
+
+
+--------------------------------------------------
+peer id: 224
+----------
+*Comments*:["1 - kind of confused by your forward instance construction. It seems sufficient to just have one set Si, see the solutions\r\n\r\n2c and 3c - I think you should explain in more detail why the assumption of non-optimality results in a contradiction. That is, show the parts of the construction which allow you to find a better M; or OPT(P')\r\n"]
+
+
+
+
+--------------------------------------------------
+peer id: 540
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 214
+----------
+*Comments*:['the proof is pretty straightforward, your prove sometimes make me confusing.']
+
+
+
+
+--------------------------------------------------
+peer id: 220
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 163
+----------
+*Comments*:["For Simple Target Tag instance, you forgot to have another parameter, theta (the target number of winners). \r\n\r\nPart 2: It's important to index edges to make sure you're constructing certificate correctly.\r\n\r\nPart 3: Again, it's important to index edges E as in the forward instance construction. Read the solution on how to improve on your proof of correctness. "]
+
+
+
+
+--------------------------------------------------
+peer id: 537
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2513
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:["I think you confused with the difference between this problem and 5.1, In this problem Path is pre-determined. But in your solution you still assume each team can choose path that suits them.\r\n\r\nThus you missed many points because that false assumption.\r\n\r\nIn step II and step III, you know what you should prove (certificate is valid and optimal). But since your construction is in-correct. It's quite impossible to proof it."]
+
+
+
+
+--------------------------------------------------
+peer id: 544
+----------
+*Comments*:["I think this solution simply copies TA's 5.1 Target Tag solution.In simple target tag problem path is a input and they are fixed thus we cannot argue that each s-t pair is connected by a True path or a False path. What we need to do is to select a subset of paths that share no vertices."]
+
+
+
+
+--------------------------------------------------
+peer id: 543
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 164
+----------
+*Comments*:['Forward Instance Construction:\r\n\r\n- You use a lot of notation that you don\'t define. For example, in the third bullet point, you use "u_i", but you never defined the u\'s, so the reader can\'t understand what the u\'s are. This happens throughout your entire construction.\r\n\r\n- Also, you say to create a "true" path, but does this mean there\'s a false path as well? If so, you make two paths for each team, but in the problem, there is only one path assigned for each team. \r\n\r\nBackward certificate construction:\r\n\r\n- I don\'t understand what the first bullet point is saying. What are the u_i\'s? This goes back to defining your notation. \r\n\r\nForward Certificate Construction:\r\n\r\n- In the construction in number 1, what does "s_i-t_i path be the given path mean"? Or more specifically, what does it mean to be a given path? \r\n\r\n- You also don\'t make it clear what paths you are adding to your solution for target tag. \r\n\r\n']
+
+
+
+
+--------------------------------------------------
+peer id: 158
+----------
+*Comments*:['Overall: this answer if just the copy of TA solution of 5.1 with many typos\r\n\r\nyour description of "Simple Target Tag" problem is totally wrong. This problem is not the same as "Target Tag" problem.\r\n\r\nPart I: You just copy the answer from "Target Tag" problem, and this answer is totally irrelevant with "Simple Target Tag" problem, no matter the construction or runtime analysis. (Even your just copy the answer, you made a crucial typo in "u" and "v")\r\n\r\nPart II and III: this answer if just the copy of TA solution of 5.1 with many typos.\r\n\r\nIn NP: You misunderstood this question. And to proof SST in NP, we should first check if "P* in P". 6 points.\r\n']
+
+
+
+
+--------------------------------------------------
+peer id: 176
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2515
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:['Good work!']
+
+
+
+
+--------------------------------------------------
+peer id: 174
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 137
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 178
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 185
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 223
+----------
+*Comments*:['nice']
+
+
+
+
+--------------------------------------------------
+peer id: 189
+----------
+*Comments*:['Good job, only thing wrong is the runtime.']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2524
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:["Generally good work with a critical missing.\r\n\r\nIn part II and part III, you not only need to prove the certificate is valid, you also must show it's optimal. But you did not.\r\n\r\nPlease make sure you understand what my comment means, and consult TA ad OH if you can not."]
+
+
+
+
+--------------------------------------------------
+peer id: 193
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 148
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 169
+----------
+*Comments*:['Clear definition of problem and defining instance of problem. Correct Instance as well. NP-Hardness Overall structure is correct for instance and the runtime is correct. Construction of forward instance is fitting and fits every aspect of each instance clearly. Constraints were given and points given for correct runtime. Detailed notes also provide important aspects of the proof. Backward construction also fits the forward construction and proof is valid. Forward Certificate construction well defined for yes instance given from Part 2.\r\nPerfect Solution.  ']
+
+
+
+
+--------------------------------------------------
+peer id: 177
+----------
+*Comments*:['1. x, y, z, e, theta for decision problem. otherwise perfect.\r\n\r\nWow, very good job.']
+
+
+
+
+--------------------------------------------------
+peer id: 545
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2529
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:['Great work!']
+
+
+
+
+--------------------------------------------------
+peer id: 152
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 145
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 144
+----------
+*Comments*:['In forward instance construction, you should also construct vertices on each path.']
+
+
+
+
+--------------------------------------------------
+peer id: 229
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 209
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 205
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2538
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:['Great job!']
+
+
+
+
+--------------------------------------------------
+peer id: 231
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 210
+----------
+*Comments*:['Perfect solution.']
+
+
+
+
+--------------------------------------------------
+peer id: 194
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 140
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 138
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 213
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2541
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:["Generally good work, with a critical missing:\r\n\r\nIn part II and part III, you not only need to prove the certificate is valid, you also must show it's optimal. But you did not.\r\n\r\nPlease make sure you understand what my comment means, and consult TA ad OH if you can not."]
+
+
+
+
+--------------------------------------------------
+peer id: 146
+----------
+*Comments*:['Yup, all that checks out.']
+
+
+
+
+--------------------------------------------------
+peer id: 155
+----------
+*Comments*:['1. R\x08\x08untime is a little off. \r\n\r\n2. In backward and forward certificate construction, your proof should say more directly about how the target size |M| >= k,  |S| >= k constraints are satisfied. \r\n\r\nOtherwise, good job:)']
+
+
+
+
+--------------------------------------------------
+peer id: 204
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 156
+----------
+*Comments*:["I. you can't assume that m is bounded by n, so runtime is a little off. also you need to construct the same number of source nodes as triples, not nodes in X. \r\n\r\nII and III. doesnt mention that when the number of teams is greater than k, its a yas instance"]
+
+
+
+
+--------------------------------------------------
+peer id: 208
+----------
+*Comments*:['Part I: The construction seems not correct and the runtime is wrong.\r\n\r\n']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2546
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:['Great job!']
+
+
+
+
+--------------------------------------------------
+peer id: 166
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 217
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 201
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 221
+----------
+*Comments*:['1. I think you can \x08show more details on S^a, T^a']
+
+
+
+
+--------------------------------------------------
+peer id: 196
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2554
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:["It's not a Ensemble Ensemble problem, but I assume it's a typo. If it's not a typo, then it may means you are confused about how should we approach such problem.\r\n\r\nYou did not specify how should we construct Simple Target Tag from a 3-D matching problem in part I.\r\n\r\nYou seems confused about what should we do for reduction. Please come to office hour if you need help."]
+
+
+
+
+--------------------------------------------------
+peer id: 191
+----------
+*Comments*:['Did not complete part 3 ']
+
+
+
+
+--------------------------------------------------
+peer id: 212
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 215
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 139
+----------
+*Comments*:['forward instance construction runtime makes no sense (is infinite)\r\n\r\nbackward cert construction is backwards, despite the proof being relatively valid\r\n\r\nforward cert construction makes no sense as network flow is not relevant to the problem.']
+
+
+
+
+--------------------------------------------------
+peer id: 151
+----------
+*Comments*:['Mistake the direction of reduction! Hard  to understand!  Not complete! Not clear!']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 2557
+
+
+--------------------------------------------------
+TA id: 521
+----------
+*Comments*:["I think your claim that m < n is not true, can we have more edges than vertex in 3-D matching? I think it's totally possible.\r\n\r\nGenerally good work, with a critical missing:\r\n\r\nIn part II and part III, you not only need to prove the certificate is valid, you also must show it's optimal. But you did not.\r\n\r\nPlease make sure you understand what my comment means, and consult TA ad OH if you can not."]
+
+
+
+
+--------------------------------------------------
+peer id: 219
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 199
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 179
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 539
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 136
+----------
+*Comments*:['']

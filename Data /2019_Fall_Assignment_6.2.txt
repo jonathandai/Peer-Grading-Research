@@ -1,0 +1,1229 @@
+﻿--------------------------------------------------------------------------------
+******************** problem submission id: 18221927
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: None
+----------
+*Proof*: None
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 151427
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 151427
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 82660
+----------
+*Algorithm*: Very nice.
+----------
+*Proof*: Well done, maybe could have been a little more in depth but still effective.
+----------
+*Clarity*: Clear, but could have benefited from a little bit of additional depth.
+------------------------------
+TA's comments on peer 82660
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149406
+----------
+*Algorithm*: The answer is correct.
+----------
+*Proof*: Though it is obvious, I would prefer to add a line in the proof of part II, claiming that all s^u contains all the elements in the set by construction.
+Not a big deal though.
+----------
+*Clarity*: Good job.
+------------------------------
+TA's comments on peer 149406
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 58795
+----------
+*Algorithm*: Looks good.
+----------
+*Proof*: An appeal to your construction may have aided your proof, but it is otherwise correct.
+----------
+*Clarity*: Succinct and to the point.
+------------------------------
+TA's comments on peer 58795
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 65306
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 65306
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 124510
+----------
+*Algorithm*: Correct.
+----------
+*Proof*: Part II and III are correct. 
+----------
+*Clarity*: Well written.
+------------------------------
+TA's comments on peer 124510
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 110052
+----------
+*Algorithm*: Did not prove that the problem is NP. Must show that you can validate a yes instance of the problem in polynomial time, this solution is missing this step. 
+----------
+*Proof*: Did not prove that the problem is NP. Must show that you can validate a yes instance of the problem in polynomial time, this solution is missing this step. 
+----------
+*Clarity*: Clean notation no errors. 
+------------------------------
+TA's comments on peer 110052
+----------
+*Quantitative*: They show NP at the very beginning
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149666
+----------
+*Algorithm*: Forward instance construction is correct.
+
+
+Backward certificate construction is correct.
+
+
+Forward certificate construction is correct.
+----------
+*Proof*: Good to see that you mentioned this problem is in NP.
+
+
+Runtime analysis for forward instance construction is correct.
+
+
+Proof for backward certificate construction is correct.
+
+
+Proof for forward certificate construction is correct.
+----------
+*Clarity*: Writing is concise and clear.
+------------------------------
+TA's comments on peer 149666
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: Don't deduct this much point if you think everything is perfectly correct and clear. 
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18221918
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Runtime for part 1 is |V|+|E|
+----------
+*Proof*: 
+----------
+*Clarity*: Need to be a little more clear and formal in the proofs. 
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 145292
+----------
+*Algorithm*: The answer had correct parts and followed all the steps of the reduction proof. However, the approach was not correct. The reduction should have been to 3-D matching which this answer did not do. Because of this solution is not correct and should be stated that the approach is not correct. However, the steps shown was finished and they did follow the outline of a reduction proof.
+
+
+
+
+----------
+*Proof*: The proof was explained thoroughly. Part of the proof could have been improved by   having the correct parameters by having the correct reduction problem of 3-D matching.The rest of the proof was correct and followed the procedures. However, they must state if the approach is wrong and the steps to improve it.
+
+
+----------
+*Clarity*: The submission was well and was clear and concise. It showed the steps of the reduction proof clearly and had all three parts completed. It was also helpful to have a diagram of the forward instance construction because it helped with understanding the approach of the answer provided. All the solutions for the proof was also easy to understand though it could have wrapped up the explanations better. However, the user also did not notify that their solution is incorrect/incomplete. If a solution is incorrect they must state that their approach is wrong and define how they can fix the issue.
+
+
+------------------------------
+TA's comments on peer 145292
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149607
+----------
+*Algorithm*: The solution is correct, but some of the statement is confusing . For example  in the step 3 of part 1, it is not very clear how they desigante the path.
+----------
+*Proof*: The proof is correct, 
+----------
+*Clarity*: The writing of the submission is clear, concise, and easy to understand.
+------------------------------
+TA's comments on peer 149607
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149307
+----------
+*Algorithm*: The answer is correct, a good solution although different from the TA's solution.
+----------
+*Proof*: The proof is correct, but the runtime analysis of part I is incorrect. Part I should be: vertices construction: O(|V|+|E|), edges & paths construction: O(|V|+|E|), total: O(|V|+|E|). Part II should be: O(|\theta|).
+----------
+*Clarity*: The clarity is pretty good. The illustration does help a lot to understand. However, I highly recommend the authors to utilize the LaTeX template for reduction available on Canvas. And there are many typos need to be fixed.
+------------------------------
+TA's comments on peer 149307
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 82553
+----------
+*Algorithm*: Answer is close, but falls short of being correct
+----------
+*Proof*: Proofs need to be more clear, each section should explain exactly what you're doing (i.e., constructing an instance of "this" from "that"... the lack of notation is hard to follow.
+----------
+*Clarity*: The graphs help visualize your main idea, but there are many grammatical errors and misspellings that make the overall answer less cohesive. Ex: "Does the S in stupid spy problem
+is at least theta"
+------------------------------
+TA's comments on peer 82553
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 79595
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 79595
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 62199
+----------
+*Algorithm*: I did indepSet as well! Your implementation is slightly different from mine, but I believe it still checks all the right boxes. You did miss part of your third step but it's not too big of a miss step so I'm only taking off half a point.
+----------
+*Proof*: Reduced a half a point because you didn't have a claim for the third proof, but otherwise good work!
+----------
+*Clarity*: The figure helped a great deal for visualizing, though there were also a few bits that were worded strangely or had some bad typos. 
+------------------------------
+TA's comments on peer 62199
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 103154
+----------
+*Algorithm*: The reduction from independent set seems to make sense and is really quite clever, awesome work! Also, great job specifying that this problem is in NP.
+----------
+*Proof*: The runtime analysis seems correct given the independent set construction described. The forward construction breaks the model and does not specify a "claim" before the "proof" section.
+----------
+*Clarity*: The diagram *really* helped me out in understanding this proof, thanks for including it. Otherwise, there were some issues with verbosity, pervasive typos, and formatting problems that made reading the proof a bit difficult.
+------------------------------
+TA's comments on peer 103154
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18221921
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: Only add vertices if they are unique.
+----------
+*Proof*: None
+----------
+*Clarity*: Need better clarity for the construction. For example, you need to specify the spy and targets.
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 151275
+----------
+*Algorithm*: In the forward instance construction, you need to be clear that you are only adding vertices for a,b, and c into the graph only if they are unique. You have to use the property preventing vertex intersections in paths to enforce the constrain that each element in P can only appear in one matching
+----------
+*Proof*: The proofs are fallacious, as expected given the mistakes in part 1. The proof for part 2 uses the right idea that no intersections implies unique elements in the matchings, but this property does not exist because of the construction in part 1
+----------
+*Clarity*: The submission is confusing and contains significant incorrect statements. For example, "it is impossible to have a non-empty vertex intersection" (Part 3, Step 2). The vertex intersection must be empty according to the problem definition of the yes certificate
+------------------------------
+TA's comments on peer 151275
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 105330
+----------
+*Algorithm*: You didn't consider whether duplicate vertices would be made when you looked through all the variable in T. This is a small error, but we need a spy and a target. You could easily create and append these. Otherwise there may be a case where variable xi appears three times in the T, which would mean that it would be considered to be 3 different spies, which makes no sense.
+----------
+*Proof*: For runtime, it is correct, but it would be helpful if you assigned the size of T to be some variable. Your proofs are clean and clear.
+----------
+*Clarity*: It was very short and concise- nice work. Runtime would've been clearer if size had been defined as a variable
+------------------------------
+TA's comments on peer 105330
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 82455
+----------
+*Algorithm*: Your algorithm is correct
+----------
+*Proof*: Your proof is elegant and accurate!
+----------
+*Clarity*: Very clear
+------------------------------
+TA's comments on peer 82455
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149223
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 149223
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 141557
+----------
+*Algorithm*: 
+----------
+*Proof*: The proof is clear and correct.
+----------
+*Clarity*: The problem is defined clearly.
+------------------------------
+TA's comments on peer 141557
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 125069
+----------
+*Algorithm*: Your construction is incorrect because in 3D matching each element can be assigned to several elements, but in the Stupid Spy problem, each spy only knows one path and target.
+----------
+*Proof*: Your proof is relatively clear based on your construction.
+----------
+*Clarity*: Overall clear.
+------------------------------
+TA's comments on peer 125069
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 101430
+----------
+*Algorithm*: Great answer and algorithm
+----------
+*Proof*: Proper proof with good runtime analysis
+----------
+*Clarity*: Great explanation
+------------------------------
+TA's comments on peer 101430
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18185963
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: I kind of get the idea and it may seems correct, but the forward instance construction is not well written so it is hard to verify the correctness. 
+----------
+*Proof*: missing proof for NP
+----------
+*Clarity*: Not easy to understand. 
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 83372
+----------
+*Algorithm*: Need an overall explanation of independent set np completeness
+----------
+*Proof*: Proof and analysis is complete
+----------
+*Clarity*: Proof is clear
+------------------------------
+TA's comments on peer 83372
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149323
+----------
+*Algorithm*: Even though it reduces the stupid spy problem from independent set problem which differs from the answer, I believe this is correct somehow. The author mapped constraints of those two problems properly, which suggests it maybe correct, but I am now very sure about that.
+----------
+*Proof*: Nice proof, easy to understand.
+----------
+*Clarity*: Very clear.
+------------------------------
+TA's comments on peer 149323
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 144255
+----------
+*Algorithm*: Your answer seems like it will result in the correct answer. 
+----------
+*Proof*: Your proof is good, and demonstrates understanding of the problem. Well done.
+----------
+*Clarity*: Your proof is a little unclear, and would benefit from a diagram or visual demonstration of how your algorithm works. 
+------------------------------
+TA's comments on peer 144255
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 83555
+----------
+*Algorithm*: shouldn't it be Y = (G, theta)? 
+
+
+Forward Instance Construction:
+2. this implies {v11, v22, v33, ..., vnn} which isn't what you're looking for
+3. firstly, this notation is wrong in so many places. you are constructing a set of sets of edges and sets of edges, with conditionals going the wrong way. secondly, it's difficult to understand what you were even trying to get at so I find it hard to give you partial credit.
+4. similarly here. whatever you're trying to construct, it doesn't seem to be working out. a diagram or an explanation could be helpful in describing what is happening.
+
+
+wait actually, i think i've figured out what you're trying to do, and it's a decent idea, so i'll give you some partial credit. your construction itself is still wrong, though.
+----------
+*Proof*: Backward Certificate Construction:
+Solution set: again, your conditional is backwards and you're constructing a set of sets of single vertices. Correct notation should be $M = \{v_i \in V : i \in S^Y \}$, which reads "$M$ is the set of $v_i \in V$ such that $i \in S^Y$". 
+Claim: does not have to be maximum set of indices. You have the Stupid Spy as a decision problem with theta', so your certificate would be a set of indices of size at least theta'.
+Proof: You do not need to show that S^Y corresponds to the maximum independent set in Y (your proof does not actually show this either, it only shows that given a certificate for X^Y of size theta', you can construct a certificate for Y of size theta = theta'. to actually prove your claim, you also need the forward certificate construction from part 3).
+
+
+Forward Certificate Construction:
+similar comments here. your claims are swapped for these two parts, though your proofs show the correct things.
+
+
+you forget to show that Stupid Spies is np.
+----------
+*Clarity*: poor notation, proofs that do not support the claims, generally uncomfortable to read
+------------------------------
+TA's comments on peer 83555
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 124864
+----------
+*Algorithm*: The construction from independent instance to stupid spy instance misses some of the edges required to form the paths created in Ry in forward construction.
+Taking an example of a 4 vertices connected as a rectangle, the route from s1 to t1 has a path between V11 and V12 which is missing in the edge construction Ey.
+In the claim, instead of claiming M to the maximum constraint, the problem is a decision problem, where M is not necessarily optimized.
+----------
+*Proof*: The analysis is proper assuming the issues stated in the comment for Answer are resolved.
+----------
+*Clarity*: The solution is well written to understand constructions and proofs. All notations are properly described.
+------------------------------
+TA's comments on peer 124864
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 97608
+----------
+*Algorithm*: This looks to be correct, but it is difficult to verify because the construction is very involved. I would really appreciate a diagram showing the constructed graph.
+----------
+*Proof*: Again, the backward and forward certifications show the idea of verifying the whether a set of nodes is independent based on whether the routes are independent and vice versa. This is based on the construction, which is difficult to follow.
+----------
+*Clarity*: Difficult to follow, the forward instance construction is quite complex and I would have benefited greatly from a diagram.
+------------------------------
+TA's comments on peer 97608
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149243
+----------
+*Algorithm*: 1.lack the np prove. 2.the construction is a bit weird. I wonder how you put the vertices into different kind like s or t in the spy problem. 
+----------
+*Proof*: 1.the runtime analysis in part I I think    it should be m+n(m is the edges in the independent set)
+----------
+*Clarity*: the prove is a bit chaotic. Just index the important point and don't give every sentence  a index number. 
+------------------------------
+TA's comments on peer 149243
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18287452
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: None
+----------
+*Proof*: None
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 149276
+----------
+*Algorithm*: Your algorithm is correct, despite some minor errors and too complicated, try to make it concise!
+----------
+*Proof*: Runtime analysis is wrong, it should be O(m*n), also fail to convert the problem to a decision form
+----------
+*Clarity*: In part 2 and part 3, so many spoken language, render it not well grounded. Despite of that it is still a good one. Next time make it more logistically-consistent
+------------------------------
+TA's comments on peer 149276
+----------
+*Quantitative*: The runtime is correct. 
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 83709
+----------
+*Algorithm*: The construction is correct but is more complicated than the TA's solution
+----------
+*Proof*: The proof is correct
+----------
+*Clarity*: The forward instance construction is not terse
+------------------------------
+TA's comments on peer 83709
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 58198
+----------
+*Algorithm*: The algorithms seems right
+----------
+*Proof*: The proof is clear and on point
+----------
+*Clarity*: More explanation could be provided in places that has a lot of math notations
+------------------------------
+TA's comments on peer 58198
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 102267
+----------
+*Algorithm*: This construction reduced from Set Packing checks out, and the solution discusses how the problem is in NP.
+----------
+*Proof*: The proofs for the backwards and forwards instance constructions are correct. Given the solution's approach, the runtime analysis checks out as well.
+----------
+*Clarity*: The solution is pretty clear overall and easy to follow.
+------------------------------
+TA's comments on peer 102267
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 124300
+----------
+*Algorithm*: Your algorithm is correct
+----------
+*Proof*: Your proof and analysis is correct. Runtime analysis in part II is missing. 
+----------
+*Clarity*: Everything is concise and clear. It's easy to follow everything
+------------------------------
+TA's comments on peer 124300
+----------
+*Quantitative*: Runtime of part 2 for proving a decision problem is NP-hard is not necessary
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 82025
+----------
+*Algorithm*: 
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 82025
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 103663
+----------
+*Algorithm*: Correct reduction from set packing problem.
+----------
+*Proof*: Correct run time analysis with sound backward and forward construction.
+----------
+*Clarity*: Clear and succinct
+------------------------------
+TA's comments on peer 103663
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 78040
+----------
+*Algorithm*: Algorithm is correct.
+----------
+*Proof*: Runtime analysis for backward certificate construction is missing
+----------
+*Clarity*: Explanations are clear and concise
+------------------------------
+TA's comments on peer 78040
+----------
+*Quantitative*: Runtime of part 2 for proving a decision problem is NP-hard is not necessary
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18221915
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: None
+----------
+*Proof*: Missing proof for NP. 
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 149184
+----------
+*Algorithm*: Your approach to reduce Set Packing to Stupid Spy seems to be great and natural. 
+----------
+*Proof*: Your proof seem to be logical. Particularly, contradiction-based proofs seem to work in your solution quite sufficiently.
+----------
+*Clarity*: Visualized solution was easy to understand, and the construction steps were concisely described.
+------------------------------
+TA's comments on peer 149184
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 95231
+----------
+*Algorithm*: 1. did not prove that the Stupid Spy problem is in NP first
+2. Too little content in constructions
+----------
+*Proof*: 1. Runtime should be O(m+n)
+2. The runtime in part III should be the same as part I 
+----------
+*Clarity*: 1. Not enough information provided in constructions
+------------------------------
+TA's comments on peer 95231
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 151084
+----------
+*Algorithm*: Part I: I think you actually mean add vertex for each element in the Union set of S1,...Sn but your are saying “For every element a in S1 ∪ S2 ∪ · · · ∪ Sn, create a vertex v in graph (V f , Ef )” 6/3
+Part II: 
+Construction Algorithm is correct 9/3
+Part III: 
+Construction Algorithm is correct 9/3
+
+
+----------
+*Proof*: Part I: Runtime is correct.9/3
+Part II: Proof is correct. 9/3
+Part III:  Proof is correct. 9/3
+
+
+----------
+*Clarity*: clearly conveyed. 
+------------------------------
+TA's comments on peer 151084
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149258
+----------
+*Algorithm*: Correct.
+----------
+*Proof*: Correct.
+----------
+*Clarity*: Clear writing.
+------------------------------
+TA's comments on peer 149258
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 101666
+----------
+*Algorithm*: Nice choice on set packing.
+----------
+*Proof*: 
+----------
+*Clarity*: Comprehensive but not too long. Good job!
+------------------------------
+TA's comments on peer 101666
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 78248
+----------
+*Algorithm*: Correct
+----------
+*Proof*: 
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 78248
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 82131
+----------
+*Algorithm*: -2 : Explanation that stupid spy is in NP is missing.
+-0.5 : Set packing instance definition used in FIC doesn't match the definition in the give  book. You have to have a third set U.
+-1: Your figure 1  is wrong. Sets are not ordered. Therefore in FIC, you are actually assigning an arbitrary order to the paths. 
+----------
+*Proof*: -1: Your wording of FCC implies that you are picking another arbitrary order for the path (potentially different from the order picked in the FIC), thus you cannot possibly show that the  routes Ri are actually the routes that you constructed in FIC.
+----------
+*Clarity*: -0.5 : It's not clear that the definition of the set packing problem matches exactly the definition given in the book. (In particular, you do not say "can we pick *at least* k sets...")
+-0.5 : Confusing notation in BCC (bold lowercase means vector (i.e. ordered), but collection of sets is unordered by definition. 
+-0.5 : Confusing terminology in BCC : you mention that x is an assignment. There is nothing to assign if x is a collection of subsets (which you say so).
+------------------------------
+TA's comments on peer 82131
+----------
+*Quantitative*: The order in the path does not affect the correctness of the solution. 
+
+
+For set packing we need ground set U but it is not used in the reduction. 
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 78518
+----------
+*Algorithm*: Overall looks correct! Not the TA's solution, but doesn't appear incorrect.
+----------
+*Proof*: The runtime may be incorrect, but I'm not sure. The algorithms used appear correct.
+----------
+*Clarity*: The answer is clear and concise.
+------------------------------
+TA's comments on peer 78518
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 18221940
+
+
+--------------------------------------------------
+TA id: 124628
+----------
+*Algorithm*: None
+----------
+*Proof*: None
+----------
+*Clarity*: None
+
+
+
+
+
+
+--------------------------------------------------
+peer id: 78518
+----------
+*Algorithm*: The answer was very similar to the given solution. I found no flaws with their construction.
+----------
+*Proof*: The runtime analysis and everything else appeared correct. However, the runtime analysis for the backwards certificate construction appears incorrect, so I had to dock a couple points. 
+----------
+*Clarity*: The answer is overall very clear, but I think the answer for the backwards certificate construction was a bit too verbose.
+------------------------------
+TA's comments on peer 78518
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149607
+----------
+*Algorithm*: The solution is equivalent to TA's solution
+----------
+*Proof*: The proof and runtime analysis are correct
+----------
+*Clarity*: The writing of the submission is clear, concise, and easy to understand. 
+------------------------------
+TA's comments on peer 149607
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 124864
+----------
+*Algorithm*: No issues with the answer. The given answer is similar to TA's answer.
+----------
+*Proof*: Nice work with the proofs. Written in good detail.
+----------
+*Clarity*: Clearly written answer.
+------------------------------
+TA's comments on peer 124864
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 151275
+----------
+*Algorithm*: Looks good
+----------
+*Proof*: The proof in section 2 in particular is exceptionally thorough
+----------
+*Clarity*: 
+------------------------------
+TA's comments on peer 151275
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 144255
+----------
+*Algorithm*: Your algorithm is correct and seems to be a correct reduction.
+----------
+*Proof*: Your proof demonstrates understanding of the problem and the steps needed to prove its NP-Complete behavior. 
+----------
+*Clarity*: Your proof is quite lengthy and at times hard to follow. Adding in a couple diagrams or examples would go a long way.
+------------------------------
+TA's comments on peer 144255
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 110052
+----------
+*Algorithm*: Good job showing that it is NP
+
+
+The backward certificate construction is way to involved, though the notation is precise, the amount of variables to track make it very hard to follow.  However, the author proves both parts required that the set V is infact a vertex cover, and that it has the correct size. 
+
+
+The forward certificate constructions is exceedingly clear and it easy to verify that it is correct. 
+
+
+----------
+*Proof*: Good job showing that it is NP
+
+
+The backward certificate construction is way to involved, though the notation is precise, the amount of variables to track make it very hard to follow.  However, the author proves both parts required that the set V is infact a vertex cover, and that it has the correct size. 
+
+
+The forward certificate constructions is exceedingly clear and it easy to verify that it is correct. 
+
+
+----------
+*Clarity*: Confusing notation for forward certificate construction. It would be better to say that V^y is a matrix of m+n x n. Then using the notation given, even if you choose to use this notation, it would be better to specify V^y in the integers domain instead of real number.  Nevertheless the main complaint is the dense mathematical notation, were  in some cases it is not needed. 
+
+
+The backward certificate construction is way too involved, though the notation is precise, the amount of variables to track make it very hard to follow.  
+------------------------------
+TA's comments on peer 110052
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments
+
+
+ 
+
+
+--------------------------------------------------
+peer id: 149625
+----------
+*Algorithm*: Wonderful construction, but there is a little problem with this solution. The v_ij matrix may be not that proper. The instructor give value 3 and 2 for different people, this implies 3+2+2 > 3+3. However if 3 and 2 are placed by 2 and 1, we can’t guarantee 2+1+1 > 2+2. This may cause some inaccuracy.  ---8
+----------
+*Proof*: Correct time analysis and nice job.  ---10
+----------
+*Clarity*: Wonderful clearness. ---10
+------------------------------
+TA's comments on peer 149625
+----------
+*Quantitative*: No comments
+----------
+*Qualitative*: No comments

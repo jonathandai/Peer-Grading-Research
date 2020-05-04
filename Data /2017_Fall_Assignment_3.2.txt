@@ -1,0 +1,810 @@
+﻿--------------------------------------------------------------------------------
+******************** problem submission id: 1711
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['The runtime of each subproblem should be O(t), since you take the minimum over all feasible t_i.']
+
+
+
+
+--------------------------------------------------
+peer id: 155
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 174
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 540
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 183
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 145
+----------
+*Comments*:['Your opt should be 3 dimensions, including start time and finish time.\r\n\r\nAssuming the list of jobs is ordered by start time, the preprocessing runtime would be O(nlogn).']
+
+
+
+
+--------------------------------------------------
+peer id: 163
+----------
+*Comments*:['Part 1: Your answer is clear to understand, but you forgot to think of additional parameters to correctly solve this problem. This leads to the same incorrectness in Part 3. \r\n\r\nPart 2: Your justification is clear and convincing. It\'s good that you have two cases where jobs overlap so OPT(i) becomes OPT(i-1) and where jobs do not overlap. \r\n\r\nPart 5: While you said in Part 2 that you use "max" operation for the case where jobs do not overlap, in Part 5 you used "min" operation. This part was confusing.\r\n\r\nPart 6: Your runtime is wrong. First, you need to include time for sorting O(nlogn). Also, the number of subproblems is O(nT^2), not O(n^2). This is because you did not consider additional parameters so you did not take care of T. \r\n\r\nPart 7: Your implementation just based on your logic is correct. However, this is not the correct version of solution. Also, it will be better to include more test cases.']
+
+
+
+
+--------------------------------------------------
+peer id: 203
+----------
+*Comments*:['I think this implementation might be incorrect. The max and min functions used in recurrence are confusing and appear only to have a constant inside the function. The implementation itself ignores some key cases which can further reduce the minimum time required.']
+
+
+
+
+--------------------------------------------------
+peer id: 220
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1718
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 206
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 151
+----------
+*Comments*:['Wish you good luck next time!']
+
+
+
+
+--------------------------------------------------
+peer id: 219
+----------
+*Comments*:["I hate to give 0 but they clearly stated that they know they didn't attempt the problem and plan to drop this homework, so it is fair for us to give a 0."]
+
+
+
+
+--------------------------------------------------
+peer id: 184
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 156
+----------
+*Comments*:['i feel u :( ']
+
+
+
+
+--------------------------------------------------
+peer id: 185
+----------
+*Comments*:['a sad story, may the force be with you']
+
+
+
+
+--------------------------------------------------
+peer id: 133
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 217
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1721
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:["Your recurrence is incorrect corresponding to your definition of the subproblem.\r\n\r\nIn the base case, OPT(i, j, 0) should be 0.\r\n\r\nIn the runtime analysis, the size of D could be improved to O(n). But the size of T could only be improved to O(n^2).\r\n\r\nYour implementation doesn't output the correct results. There are also some indentation mistakes."]
+
+
+
+
+--------------------------------------------------
+peer id: 218
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 169
+----------
+*Comments*:['format was good and clear. Points were removed for incorrectness in runtime. But very precise ']
+
+
+
+
+--------------------------------------------------
+peer id: 191
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 196
+----------
+*Comments*:['Good. Significantly better than most']
+
+
+
+
+--------------------------------------------------
+peer id: 140
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 223
+----------
+*Comments*:['The recurrence does not match with your subproblem statement: the jobs left over do not have to be completely contained within the new intervals. (They are only guaranteed to overlap.)\r\n\r\nBase case: if there are no jobs in an interval, then the cost is 0.\r\n\r\nRuntime: you can do somewhat better by sorting the jobs by duration first.']
+
+
+
+
+--------------------------------------------------
+peer id: 160
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 209
+----------
+*Comments*:['The result showed in the python implementation is not correct.']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1725
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['For the subproblem, I couldn\'t understand what "cover" duration [t, T] means.\r\n\r\nFor the recurrence, min{di +OPT(i+1,t)+OPT(i+1,fi +1)} makes no sense since there is only one element.\r\n\r\nFor the original problem, if you want to cover duration [0, T], you need at least T minutes.\r\n\r\nFor base case, OPT(n+1, t) should be infinity.\r\n\r\nFor the runtime analysis, the size of the subproblem is O(nT). By discretization on time, it could be improved to O(n^3). \r\n\r\n']
+
+
+
+
+--------------------------------------------------
+peer id: 152
+----------
+*Comments*:["Part2: The recurrence is wrong. According to the subproblem, the time range should be [0, max f - min s]. But the author used condition si < t or the symbol OPT[i + 1, fi + 1]. We know that the time range of si, fi is [0, max f]. The author should use si - min s, fi - min s. Besides, I can't understand di + OPT[i + 1, fi + 1] + OPT[i, t].\r\nPart4: t should be some specific numbers or a set of numbers.\r\nPart5: The recurrence is wrong and i should come from n to 1.\r\nPart6: A wrong dynamic programming runtime analysis.\r\nPart7: A wrong dynamic programming code.\r\nPart8: There are not test cases."]
+
+
+
+
+--------------------------------------------------
+peer id: 189
+----------
+*Comments*:['Code is hard to read. No test cases. Don\'t understand recurrence - "The optimal sliding schedule with jobs {1,...,i} and timeline T either includes\r\nor does not include object i. " How can this be true when all jobs must be scheduled? Does not seem possible that this program could be solved in O(n^2) time.']
+
+
+
+
+--------------------------------------------------
+peer id: 162
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 188
+----------
+*Comments*:["Part 2:\r\n\r\nThis does not consider all possible scenarios. For example, there could exist a situation when you i - 4 job is better positioned overlapping the i + 1 job, but this recurrence will never consider that.\r\n\r\nPart 4:\r\n\r\nWhat is t? I think you mean for all time from s1 to T?\r\n\r\nPart 5: \r\n\r\nAll good except your base case doesn't match your part 4.\r\n\r\nPart 7:\r\n\r\nNo test cases?\r\n"]
+
+
+
+
+--------------------------------------------------
+peer id: 224
+----------
+*Comments*:['Part 1 - subproblem definition is unclear - if you mean minimum time to cover the interval, isn\'t it the interval itself? Also do not see how this subproblems allows you to formulate a dynamic program with polynomial runtime.\r\n\r\nPart 2 - not sure what is meant by the sentence "The optimal sliding schedule with jobs {1,...,i} and timeline T either includes\r\nor does not include object i". By definition the problem has to include all the scheduled tasks, you are just trying to minimize the compute time.\r\n\r\nPart 7 - I do not think your code works, and there are no test cases to indicate where/why it breaks. Your code also does not resemble the iterative dynamic program specified in part 5.']
+
+
+
+
+--------------------------------------------------
+peer id: 541
+----------
+*Comments*:["Some problem in part 2. OPT(I+1,t) and OPt(I+1,fi+1) may overlap. Second, since we are assigning jobs to a certain time, fi does not need to plus 1. Because one job ends, another job can directly follow that, it does not have to wait for 1 time unit more. Third, the recurrence quation is a little bit rough, I don't understand di plus the 2 things means."]
+
+
+
+
+--------------------------------------------------
+peer id: 231
+----------
+*Comments*:["II. I don't see how overlap is accounted for in your recursion.  You are always adding d_i but never taking the difference between starting and ending times between jobs.  Also I don't understand the use of minimum as there's nothing being compared?  Just added?  Did you mean to include some subscripts to minimum?  \r\n\r\nFor the original problem: OPT(1,0).  s_i = s_1, t=0.  According to the recurrence, If s_i <= 0: do things, else infinity.  You demand s_i must be 0 to begin but what if s_i is non-zero?  It makes sense relative to the original problem, but the recurrence doesn't break the problem down logically.  \r\n\r\nNeed a base case for t>T?  f_i+1 > T at some point I would assume.\r\n\r\nInput requires duration as well, T should be assumed from S set and F set.  \r\n\r\nPreprocessing is n log n if you use a good sorting algorithm ie Quicksort.  Runtime is not independent of T.  "]
+
+
+
+
+--------------------------------------------------
+peer id: 215
+----------
+*Comments*:['all implementations are correct except run time. \r\nHowever, with this subproblem, you will not get the correct answer ']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1728
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['The recurrence is incorrect in the sense that job_i may overlap with job_j for some j > i instead of only overlapping with job_i+1.\r\n\r\nFor the runtime, the preprocessing time is O(n log n) (for sorting).']
+
+
+
+
+--------------------------------------------------
+peer id: 157
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 198
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 190
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 201
+----------
+*Comments*:['Base case & runtime were consistent with algorithm, but algorithm itself is incomplete. ']
+
+
+
+
+--------------------------------------------------
+peer id: 204
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 211
+----------
+*Comments*:['II\r\nIncorrect but explained why. The result of this recurrence is not the optimal one to the problem.\r\nVI\r\nRuntime of preprocessing should be O(nlogn) for sorting jobs. So the total runtime should be O(n+nlogn).']
+
+
+
+
+--------------------------------------------------
+peer id: 545
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 142
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1734
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['Your recurrence is incorrect. In function L, it will always try to schedule the job to have the most overlap with [a, b], which is not optimal.\r\n\r\nFor the base case, according to your definition, OPT(i, j) = 0 for all i, j s.t. S(i, j, JOBS) = empty.']
+
+
+
+
+--------------------------------------------------
+peer id: 158
+----------
+*Comments*:["Overall: this answer is really hard to understand. I spent one hour on this answer and still do not understand some of the details. But I think it may be correct due to three reasons:\r\n\t1. the author separated problem into left and right parts.\r\n\t2. the author tried to sort the jobs and use the shortest one.\r\n\t3. the implementation is executable.\r\n\r\nHowever, this answer is really far from the TA's solution in comprehensibility. I would suggest 8 points. Right but not best.\r\n\r\nPart II: those two pages recurrence is really hard to judge. I skip this part.\r\n\r\nPart IV: even i == j, the OPT (i,j) should also equals to 0. 6 points.\r\n\r\nPart VI: runtime, based on his/her recurrence, the runtime analysis is correct. 10 points. (though not the same as TA solution)\r\n"]
+
+
+
+
+--------------------------------------------------
+peer id: 543
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 137
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 537
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 177
+----------
+*Comments*:['Subproblem: I think you need the index of the jobs too, right? \r\n\r\nRecurrence/Iterative DP: i understand your explanation for the interval, but I still think you need to iterate through the list of jobs that you have. \r\n\r\nOP/Base Case: OP would be correct following your explanation for #1. Base case very close. \r\n\r\nRuntime: You forgot to add the nlogn onto the total runtime.\r\n']
+
+
+
+
+--------------------------------------------------
+peer id: 212
+----------
+*Comments*:['The subproblem should be brief.']
+
+
+
+
+--------------------------------------------------
+peer id: 148
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 130
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 131
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1738
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:["For the definition of subproblem, d_i + f_i < t2 makes no sense.\r\n\r\nFor the recurrence, I didn't understand how you iterate on d_i. According to your definition, l = d_i.\r\n\r\nFor the base cases, how about OPT(ti, tj, dmin) where dmin >= tj - ti?\r\n\r\nFor the iterative dynamic program, again, I didn't see how you works on di.\r\n\r\nFor the runtime analysis, you could do discretization on time indices. However, the size of T should be O(n^2). Therefore, the number of subproblem should be O(n^5).\r\n\r\nFor the implementation, your code cannot run. OPT is used as a dictionary but initialize as a list. No return value for the main function."]
+
+
+
+
+--------------------------------------------------
+peer id: 170
+----------
+*Comments*:[None]
+
+
+
+
+--------------------------------------------------
+peer id: 178
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 166
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 195
+----------
+*Comments*:['Runtime is off and your test cases appear non-demonstrative, but it appears functional from what I can see ']
+
+
+
+
+--------------------------------------------------
+peer id: 205
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 544
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 179
+----------
+*Comments*:['Great solution. However, should have used both n and T for runtime  analysis']
+
+
+
+
+--------------------------------------------------
+peer id: 214
+----------
+*Comments*:['1.You should specify the runtime analysis to n and T, not just n, or you can add clarification that "without generality loss, O(T) is O(n)". \r\n2.No sufficient test cases to verify your code.']
+
+
+
+
+--------------------------------------------------
+peer id: 138
+----------
+*Comments*:['']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1739
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:['It seems to be a partial solution for 3.1.']
+
+
+
+
+--------------------------------------------------
+peer id: 194
+----------
+*Comments*:['Not much to say given that it is unfinished']
+
+
+
+
+--------------------------------------------------
+peer id: 539
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 164
+----------
+*Comments*:['part 4 - 7: no submission']
+
+
+
+
+--------------------------------------------------
+peer id: 210
+----------
+*Comments*:['The author is not answering the question at all.']
+
+
+
+
+--------------------------------------------------
+peer id: 139
+----------
+*Comments*:['parts 5-7 missing, and parts 1-4 for the wrong problem']
+
+
+
+
+--------------------------------------------------
+peer id: 208
+----------
+*Comments*:['Part I: This problem is talking about jobs, not packages.\r\n\r\nPart II: Seems it is the recurrence of the last problem.\r\n\r\nPart IV: The minimum of s and f may not be 0.\r\n\r\nPart V, VI, VII: Missing.']
+
+
+
+
+--------------------------------------------------
+peer id: 207
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 536
+----------
+*Comments*:[None]
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1762
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:["You are on the right track to solve this problem. However, your recurrence is incorrect corresponding to the definition of your subproblem. For the runtime analysis, you shouldn't use D. (There is an observation that the third dimension could be improved to O(n))."]
+
+
+
+
+--------------------------------------------------
+peer id: 144
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 522
+----------
+*Comments*:["II Recurrence\r\nDur(s, t, f, d) = the cost of time with interals within [s, t] and overlapping t which has duration time d.\r\nt is the start time or the end time of the duration d?\r\n\r\nIV Base case\r\nOPT(s, f,D + 1) = 0 is unnecessary as you start from D and q<=D\r\n\r\nV DP\r\nYou do not initialize OPT(s, f, d) = 0 if s > f which has an influence on your loop in the second part.\r\n\r\nIn the loop you only calculate OPT[si, fi, di] fo the same i, but min(si) and max(fi) may not be the same i. What you calculate cannot lead to the output.\r\n\r\nVI Runtime\r\nAs your DP is inconsistent with your former parts, I cannot decide which part you base on to get the runtime.\r\nWhat's more, what's D mean? The length of duration list is n."]
+
+
+
+
+--------------------------------------------------
+peer id: 161
+----------
+*Comments*:['I think the gist of the solution was very inline with the solution provided, but there are some points that can be improved. First and foremost is the formatting - try using the template that the professor provided, it makes things a lot clearer and easy to read. Another part would be more explanation on the variables you used, for example during the recurrence step, the DUR function/variable can be better explained, and without a clearer definition I had to take point off that. \r\n\r\nPoints were taken off run time analysis since I would not call Dur preprocessing (it was mostly filling out OPT values). Also more test cases need to be provided and shown. ']
+
+
+
+
+--------------------------------------------------
+peer id: 213
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 135
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 141
+----------
+*Comments*:["The idea seems like a copy of interval pricing, but actually there is something different of the two problem. So I think you cannot use the idea directly.\r\nAlso, I don't know why you suppose the maximum duration d.\r\nThere is no result of your code."]
+
+
+
+
+--------------------------------------------------
+peer id: 132
+----------
+*Comments*:['Looks good my man']
+
+
+
+
+--------------------------------------------------
+peer id: 176
+----------
+*Comments*:['Good attempt, though your lack of justification for your recurrence makes me less convinced that your answer is correct.']
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+******************** problem submission id: 1767
+
+
+--------------------------------------------------
+TA id: 127
+----------
+*Comments*:["For the recurrence, I cannot understand how you use the variable d (seems unchanged in recurrence). Besides, you enumerate all possible job j, for each j, you have different recurrence depending on the relation between j and j_longest, which doesn't make sense.\r\n\r\nFor the base case, there should be the case where d = 0 (i.e. no job needed).\r\n\r\nFor the Iterative Dynamic Program, step 4, you didn't define variable d. You could do the discretization on time. However, after discretization, the time indices set T should be T = {s_i for all i} + {f_i for all i} + {s_i + d_j for all i and for all j} + {f_i - d_j for all i and for all j}\r\n\r\nFor the Runtime Analysis, the number of subproblems should be O(nT^2) (after discretization, it should be O(n^5).\r\n\r\nBetter to provide the code instead of screenshot of code.\r\n\r\n\r\n"]
+
+
+
+
+--------------------------------------------------
+peer id: 146
+----------
+*Comments*:['It looks to me like the actual implementation was done correctly, but the iterative algorithm had a slight error. The iterative algorithm does not loop through the durations. This then threw the runtime off, as the runtime matched the iterative algorithm and not the correct implementation.']
+
+
+
+
+--------------------------------------------------
+peer id: 229
+----------
+*Comments*:['Overall solid and close attempt. This way was definitely geared toward breaking the algorithm into conditional actions, based on the current comparison of the start and finish indexes. Your implementation has necessary snippet explanations at the end, however the code is rather lengthy for its function. The runtime also needs to rely on the total time value to correctly evaluate a time complexity. But the test cases help demonstrate its correctness so job well done!']
+
+
+
+
+--------------------------------------------------
+peer id: 150
+----------
+*Comments*:['Good subproblem that takes into account an interval and max duration. \r\n\r\nGood intuition with the the recurance. The interval over with "t" is minimized is a little unclear with "sx" and "fx" not defined. Also doesnt take into account the release time and deadline restrictions of each job.\r\n\r\nBase case could also include when max d is 0.\r\n\r\nGood with the sorting but the interation order wont correctly fill the table in order because "t1" is the outer loop but "t2" is the larger end of the interval.\r\n\r\nRuntime per subproblem is greater than O(n).\r\n\r\nThe implementation deviates greatly from the iterative D.P. with respect to the implementation of base cases and the number of loops.']
+
+
+
+
+--------------------------------------------------
+peer id: 221
+----------
+*Comments*:["1. PartIV: the author doesn't show how to calculate d.\r\n\r\n2. PartVI: the number of subproblem doesn't consider the third element d. So the total runtime is wrong."]
+
+
+
+
+--------------------------------------------------
+peer id: 216
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 136
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 193
+----------
+*Comments*:['']
+
+
+
+
+--------------------------------------------------
+peer id: 199
+----------
+*Comments*:['']
