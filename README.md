@@ -1,1 +1,1 @@
-# Peer-Grading-Research
+# Peer Grading Research (CS 336) 
