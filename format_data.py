@@ -11,12 +11,17 @@ def main():
 
     # This is the right one 
     ## text_array = np.genfromtxt(fname=sys.argv[1], dtype=str, delimiter=separator, usecols=np.arange(0,1))
-    text_array = np.genfromtxt(fname=sys.argv[1], dtype=str, delimiter=separator, usecols=np.arange(0,1))
+    text_array = np.genfromtxt(fname="./Data/2019_Fall_Assignment_6.2.txt", dtype=str, delimiter=separator, usecols=np.arange(0,1))
+#     text_array = np.genfromtxt(fname="Data/Fall_Assignment_6.2.txt", dtype=str, delimiter=separator, usecols=np.arange(0,1))
     for x in range(text_array.size):
         print(x, text_array[x])
 
+
+
     # format np matrix into proper excel format 
     
+
+
 
     # convert your array into a dataframe
     df = pd.DataFrame(text_array)
