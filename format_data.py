@@ -2,28 +2,19 @@ import numpy as np
 import sys
 import pandas as pd
 
-# def parse_problem():
-
-
 def split_field(line):
-	split_data = line.split(': ', 1)
+	if ': ' in line:
+		split_data = line.split(': ', 1)
+	elif ':' in line:
+		split_data = line.split(':', 1)
 	return split_data
 
 
 def main():
-	# files_to_format = []
-	# if(len(sys.argv) == 0):
-	#     # if no input is given, format all documents in data folder
-	# else:
 	separator = '--------------------------------------------------------------------------------'
 
 	# This is the right one
-	## text_array = np.genfromtxt(fname=sys.argv[1], dtype=str, delimiter=separator, usecols=np.arange(0,1))
-	text_array = np.genfromtxt(fname="./Data/2019_Fall_Assignment_6.2.txt",
-							dtype=str, delimiter=separator, usecols=np.arange(0, 1))
-#     text_array = np.genfromtxt(fname="Data/Fall_Assignment_6.2.txt", dtype=str, delimiter=separator, usecols=np.arange(0,1))
-	# for x in range(text_array.size):
-	# 	print(x, text_array[x])
+	text_array = np.genfromtxt(fname=sys.argv[1], dtype=str, delimiter=separator, usecols=np.arange(0,1))
 
 	# format np matrix into proper excel format
 	titles = ['problem id', 'person type',
@@ -32,36 +23,51 @@ def main():
 	parsed_array = []
 	parsed_array.append(titles)
 	feedback_entry = []
+	ta_comment_tracker = False
+	comment_with_blanks = ''
+	comment_with_blanks_tracker = 0
 
 	i = 0
-	while i < text_array.size:
-		if text_array[i] == '********************':
-			print(text_array[i])
-			problem_id = split_field(line)[1]
-			feedback_entry.append(problem_id)
+	while i < text_array.size - 1:
+		if '********************' in text_array[i]:
+			problem_id = split_field(text_array[i])[1]
 		elif text_array[i] == '--------------------------------------------------':
 			i += 1
-			print(text_array[i])
 			person_type = split_field(text_array[i])[0]
 			person_id = split_field(text_array[i])[1]
+			feedback_entry.append(problem_id)
 			feedback_entry.append(person_type)
 			feedback_entry.append(person_id)
 			i += 1
-			while text_array[i+1] != '--------------------------------------------------':
-				if text_array[i] != '----------':
-					print(text_array[i])
-					try:
-						feedback_entry.append(split_field(text_array[i])[1])
-					except:
-						feedback_entry.append('')
-					i += 1
+			while i < text_array.size -1 and text_array[i] != '--------------------------------------------------':
+				if text_array[i] == '------------------------------':
+					ta_comment_tracker = True
+				if text_array[i] != '----------' and text_array[i] != '' and ta_comment_tracker == False:
+					if '----' not in text_array[i+1]:
+						if comment_with_blanks_tracker == 0:
+							comment_with_blanks = comment_with_blanks + split_field(text_array[i])[1]
+							comment_with_blanks_tracker = 1
+						else:
+							comment_with_blanks = comment_with_blanks + text_array[i]
+					else:
+						try:
+							if comment_with_blanks == '':
+								feedback_entry.append(split_field(text_array[i])[1])
+							else:
+								feedback_entry.append(split_field(comment_with_blanks))
+								comment_with_blanks = ''
+								comment_with_blanks_tracker = 0
+						except:
+							feedback_entry.append('')
 				i += 1
+			if text_array[i] == '--------------------------------------------------':
+				parsed_array.append(feedback_entry)
+				feedback_entry = []
+				ta_comment_tracker = False
+				continue
 		i += 1
-		parsed_array.append(feedback_entry)
-	print(parsed_array)
 
-	# convert your array into a dataframe
-	df = pd.DataFrame(text_array)
+	df = pd.DataFrame(parsed_array)
 	# save to xlsx file
 	filepath = 'data.xlsx' 
 	df.to_excel(filepath, index=False)
