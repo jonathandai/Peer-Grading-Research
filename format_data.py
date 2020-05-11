@@ -13,6 +13,7 @@ TA_DIV = '------------------------------'  # ignore text that comes after this b
 PROBLEM_INDICATOR = '********************'
 # set proper table heading structure
 TABLE_HEADING_2019 = ['Problem ID', 'Person Type','Person ID', 'Algorithm', 'Proof', 'Clarity']
+TABLE_HEADING_2019_CONVERTED = ['Problem ID', 'Person Type','Person ID', 'Comment Type', 'Comment']
 TABLE_HEADING_2017 = ['Problem ID', 'Person Type','Person ID', 'Comments']
 
 def main(): 
@@ -37,13 +38,15 @@ def format_data(file_path):
 	# load proper table heading 
 	if("2019" in file_path):
 		table_heading = TABLE_HEADING_2019
+		year = 2019
 	elif("2017" in file_path):
 		table_heading = TABLE_HEADING_2017
+		year = 2017
 
 	parsed_array = []	# num_entries x num_headings 2D list 
 	parsed_array.append(table_heading)
 	table_row = [] # one row of data in the table  
-	problem_id = "THIS PROBLEM HAS NO IDEA"
+	problem_id = "THIS PROBLEM HAS NO ID"
 
 	# print initial text array 
 	pp = pprint.PrettyPrinter(indent=0)
@@ -53,9 +56,11 @@ def format_data(file_path):
 	num_rows = text_array.size
 	# for each row in text_array 
 	while row_index < num_rows:
+		# print(text_array[row_index])
 		if PROBLEM_INDICATOR in text_array[row_index]:
 			# set problem ID 
 			_ , problem_id = split_field(text_array[row_index])
+			row_index += 1
 		if row_index+1 < num_rows and text_array[row_index] == PERSON_DIV:
 			# inc row to person ID 
 			row_index += 1
@@ -65,18 +70,18 @@ def format_data(file_path):
 			table_row.append(person_type)
 			table_row.append(person_id)
 			
-			while row_index+1 < num_rows and (text_array[row_index+1] != PERSON_DIV and text_array[row_index+1] != PROBLEM_DIV):
+			while row_index+1 < num_rows and (text_array[row_index+1] != PERSON_DIV and (text_array[row_index+1] != PROBLEM_DIV or PROBLEM_INDICATOR not in text_array[row_index+1])):
 				# keep going until you hit the next person 
 				if text_array[row_index] == COMMENT_DIV: 
 					# add comment after comment div 
 					row_index += 1
-					_, comment = split_field(text_array[row_index]) 
-					while row_index+1 < num_rows and (text_array[row_index+1] != COMMENT_DIV and text_array[row_index+1] != TA_DIV and text_array[row_index+1] != PERSON_DIV):
+					_, comment = split_field(text_array[row_index])
+					comment = comment.strip()
+					while row_index+1 < num_rows and (text_array[row_index+1] != COMMENT_DIV and text_array[row_index+1] != TA_DIV and text_array[row_index+1] != PERSON_DIV) and PROBLEM_INDICATOR not in text_array[row_index+1]:
 						# keep searching in case there is a new line within the comment 
 						comment += text_array[row_index+1]
 						row_index += 1
 					table_row.append(comment)
-					# row_index += 1
 					if row_index < num_rows and text_array[row_index] == TA_DIV:
 						# if you run into TA_DIV, keep iterating until you get to the next person 
 						while row_index+1 < num_rows and (text_array[row_index+1] != PROBLEM_DIV and text_array[row_index+1] != PERSON_DIV):
@@ -84,10 +89,25 @@ def format_data(file_path):
 				else: 
 					row_index += 1
 			# after each person, push the row and reset
-			parsed_array.append(table_row[0:len(table_heading)])
+			if(comment != "['']" and comment != ""): 
+				parsed_array.append(table_row[0:len(table_heading)])
 			# pp.pprint(table_row)
 			table_row = [] 
-		row_index += 1
+		if(PROBLEM_INDICATOR not in text_array[row_index]): 
+			row_index += 1
+
+	# reformat array for 2019 data so algo, clarity, proof are in rows not cols 
+	if(year == 2019):
+		COMMENT_TYPE = ['Algorithm', 'Proof', 'Clarity']
+		converted_list = []
+		converted_list.append(TABLE_HEADING_2019_CONVERTED)
+		for row in parsed_array[1:]: 
+			for i in range(3): 
+				cl = row[0:3]
+				cl.append(COMMENT_TYPE[i])
+				cl.append(row[3+i])
+				converted_list.append(cl)
+		parsed_array = converted_list
 
 	# convert 2D list to np array 
 	np_parsed_array = np.array(parsed_array)
