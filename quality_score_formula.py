@@ -1,5 +1,12 @@
 # Program extracting all columns 
-# name in Python 
+# name in Python
+
+#######################################
+#input excel sheet must have the following columns, in the following order:
+#problem id, grade, person type, person id, comment, negative points, positive points, corrections, suggestions, specificity, justifications
+#all codes must have a number count (no blanks)
+#######################################
+
 import sys
 import xlrd
 import xlsxwriter
@@ -39,6 +46,8 @@ def format_data(path, filename):
         score = 1
         calculated_row[0:11] = sheet_row[0:11]
 
+        #quality score is calculated below
+        #the minimum score is 1 and maximum 4
         if corrections > 0 or suggestions > 0:
             if corrections + suggestions > 1:
                 score += 1
